@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{187a8341-68e0-481b-bee0-8a51dba14d1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build">
+      <UniqueIdentifier>{10658952-6214-4066-86ac-71581a167a64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build\hystack-core">
+      <UniqueIdentifier>{41609da0-a582-4bf1-91a2-91985eddfbad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build\hystack-libnodes">
+      <UniqueIdentifier>{73657155-6b0d-403e-ba62-b423c134b039}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unix">
+      <UniqueIdentifier>{29cd9f88-d2d2-414c-a38b-dab54fa0e8b0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\core\core.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\core_cycle.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\core_solution.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\core_times.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\core_string.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\unix\unix_channel.cpp">
+      <Filter>unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\unix\unix_deamon.cpp">
+      <Filter>unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\unix\unix_exception.cpp">
+      <Filter>unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\unix\unix_process.cpp">
+      <Filter>unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\unix\unix_proctitle.cpp">
+      <Filter>unix</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\core\core.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\core_config.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\core_cycle.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\core_times.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\core_string.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\unix\unix_config.h">
+      <Filter>unix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\unix\unix_exception.h">
+      <Filter>unix</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\build\CMakeLists.txt">
+      <Filter>build</Filter>
+    </Text>
+    <Text Include="..\..\build\hystack-core\CMakeLists.txt">
+      <Filter>build\hystack-core</Filter>
+    </Text>
+    <Text Include="..\..\build\hystack-libnodes\CMakeLists.txt">
+      <Filter>build\hystack-libnodes</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\build\going.sh">
+      <Filter>build</Filter>
+    </None>
+    <None Include="..\..\README.en.md" />
+    <None Include="..\..\README.md" />
+  </ItemGroup>
+</Project>

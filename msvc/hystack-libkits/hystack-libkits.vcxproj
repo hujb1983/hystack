@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\kits\alloc\alloc_buffer.cpp" />
+    <ClCompile Include="..\..\src\kits\alloc\alloc_pool.cpp" />
+    <ClCompile Include="..\..\src\kits\conv\conv_base64.cpp" />
+    <ClCompile Include="..\..\src\kits\conv\conv_charset.cpp" />
+    <ClCompile Include="..\..\src\kits\conv\conv_json.cpp" />
+    <ClCompile Include="..\..\src\kits\conv\conv_md5.cpp" />
+    <ClCompile Include="..\..\src\kits\conv\conv_rc4.cpp" />
+    <ClCompile Include="..\..\src\kits\conv\conv_rsa.cpp" />
+    <ClCompile Include="..\..\src\kits\dev\dev_nginx.cpp" />
+    <ClCompile Include="..\..\src\kits\dev\dev_stat.cpp" />
+    <ClCompile Include="..\..\src\kits\event\event.cpp" />
+    <ClCompile Include="..\..\src\kits\event\event_accpet.cpp" />
+    <ClCompile Include="..\..\src\kits\event\event_connection.cpp" />
+    <ClCompile Include="..\..\src\kits\event\event_io.cpp" />
+    <ClCompile Include="..\..\src\kits\event\event_rbtree.cpp" />
+    <ClCompile Include="..\..\src\kits\event\event_timer.cpp" />
+    <ClCompile Include="..\..\src\kits\files\files_lock.cpp" />
+    <ClCompile Include="..\..\src\kits\files\files_stream.cpp" />
+    <ClCompile Include="..\..\src\kits\files\files_table.cpp" />
+    <ClCompile Include="..\..\src\kits\inet\inet_http.cpp" />
+    <ClCompile Include="..\..\src\kits\inet\inet_parse.cpp" />
+    <ClCompile Include="..\..\src\kits\inet\inet_socket.cpp" />
+    <ClCompile Include="..\..\src\kits\logs\logs.cpp" />
+    <ClCompile Include="..\..\src\kits\logs\logs_record.cpp" />
+    <ClCompile Include="..\..\src\kits\logs\logs_thread.cpp" />
+    <ClCompile Include="..\..\src\kits\method\circuit_mutex.cpp" />
+    <ClCompile Include="..\..\src\kits\module\modules_conf.cpp" />
+    <ClCompile Include="..\..\src\kits\module\modules_core.cpp" />
+    <ClCompile Include="..\..\src\kits\module\modules_errlog.cpp" />
+    <ClCompile Include="..\..\src\kits\module\modules_event.cpp" />
+    <ClCompile Include="..\..\src\kits\module\modules_event_epoll.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\module\modules_event_select.cpp" />
+    <ClCompile Include="..\..\src\kits\module\modules_load.cpp" />
+    <ClCompile Include="..\..\src\kits\module\modules_nodes.cpp" />
+    <ClCompile Include="..\..\src\kits\module\modules_parse.cpp" />
+    <ClCompile Include="..\..\src\kits\process\process_cycle.cpp" />
+    <ClCompile Include="..\..\src\kits\process\process_files.cpp" />
+    <ClCompile Include="..\..\src\kits\process\process_mgr.cpp" />
+    <ClCompile Include="..\..\src\kits\process\process_option.cpp" />
+    <ClCompile Include="..\..\src\kits\process\process_popen.cpp" />
+    <ClCompile Include="..\..\src\kits\thread\thread_collection.cpp" />
+    <ClCompile Include="..\..\src\kits\thread\thread_pool.cpp" />
+    <ClCompile Include="..\..\src\kits\thread\thread_task.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\kits\alloc\alloc_buffer.h" />
+    <ClInclude Include="..\..\src\kits\alloc\alloc_pool.h" />
+    <ClInclude Include="..\..\src\kits\conv\conv.h" />
+    <ClInclude Include="..\..\src\kits\conv\conv_json.h" />
+    <ClInclude Include="..\..\src\kits\dev\dev_nginx.h" />
+    <ClInclude Include="..\..\src\kits\dev\dev_stat.h" />
+    <ClInclude Include="..\..\src\kits\event\event.h" />
+    <ClInclude Include="..\..\src\kits\event\event_connection.h" />
+    <ClInclude Include="..\..\src\kits\event\event_io.h" />
+    <ClInclude Include="..\..\src\kits\event\event_posted.h" />
+    <ClInclude Include="..\..\src\kits\event\event_rbtree.h" />
+    <ClInclude Include="..\..\src\kits\event\event_timer.h" />
+    <ClInclude Include="..\..\src\kits\files\files_stream.h" />
+    <ClInclude Include="..\..\src\kits\files\files_tools.h" />
+    <ClInclude Include="..\..\src\kits\inet\inet_http.h" />
+    <ClInclude Include="..\..\src\kits\inet\inet_parse.h" />
+    <ClInclude Include="..\..\src\kits\inet\inet_socket.h" />
+    <ClInclude Include="..\..\src\kits\logs\logs.h" />
+    <ClInclude Include="..\..\src\kits\logs\logs_config.h" />
+    <ClInclude Include="..\..\src\kits\logs\logs_record.h" />
+    <ClInclude Include="..\..\src\kits\logs\logs_stream.h" />
+    <ClInclude Include="..\..\src\kits\logs\logs_thread.h" />
+    <ClInclude Include="..\..\src\kits\method\circuit_mutex.h" />
+    <ClInclude Include="..\..\src\kits\method\circuit_queue.hpp" />
+    <ClInclude Include="..\..\src\kits\module\modules.h" />
+    <ClInclude Include="..\..\src\kits\module\modules_conf.h" />
+    <ClInclude Include="..\..\src\kits\module\modules_config.h" />
+    <ClInclude Include="..\..\src\kits\module\modules_core.h" />
+    <ClInclude Include="..\..\src\kits\module\modules_cycle.h" />
+    <ClInclude Include="..\..\src\kits\module\modules_event.h" />
+    <ClInclude Include="..\..\src\kits\module\modules_load.h" />
+    <ClInclude Include="..\..\src\kits\module\modules_nodes.h" />
+    <ClInclude Include="..\..\src\kits\process\process.h" />
+    <ClInclude Include="..\..\src\kits\process\process_mgr.h" />
+    <ClInclude Include="..\..\src\kits\thread\thread_collection.h" />
+    <ClInclude Include="..\..\src\kits\thread\thread_object.h" />
+    <ClInclude Include="..\..\src\kits\thread\thread_pool.h" />
+    <ClInclude Include="..\..\src\kits\thread\thread_task.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{4692D108-B7A8-4E9F-8F3B-E0D3A3AE5703}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>hystacklibkits</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)\src\core;$(SolutionDir)\src\kits;$(SolutionDir)\src\nodes;$(SolutionDir)\libs\libssl\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;WINX;OPENSSL;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

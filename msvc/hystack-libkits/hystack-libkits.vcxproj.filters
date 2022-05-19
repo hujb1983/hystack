@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="alloc">
+      <UniqueIdentifier>{123ab3b1-e7c9-49e8-a816-1dacc5b7bb60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="conv">
+      <UniqueIdentifier>{b72eb642-06bd-4d68-81e9-a5fbef5427f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dev">
+      <UniqueIdentifier>{a51e3158-2814-4712-854f-ea76f454b4ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="event">
+      <UniqueIdentifier>{8b058148-456d-4754-b42b-66cf67fcf3f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="files">
+      <UniqueIdentifier>{205b9f1e-9e9c-4fa2-8675-f36d314f1a7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inet">
+      <UniqueIdentifier>{fb6f4aba-8244-4088-9d1c-0929d12efbeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logs">
+      <UniqueIdentifier>{c21e1bcf-7f72-4435-b2e1-064aeaeaaa6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="method">
+      <UniqueIdentifier>{2d36e862-324f-472b-97ee-c9702f864431}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module">
+      <UniqueIdentifier>{0473118a-ca4e-4800-95b2-5a9731324006}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="process">
+      <UniqueIdentifier>{04b88cfd-4803-452f-88d0-c3bf98cab089}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thread">
+      <UniqueIdentifier>{7c666395-7809-4d9c-be7e-6a0e9d03c5f5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\kits\alloc\alloc_buffer.cpp">
+      <Filter>alloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\alloc\alloc_pool.cpp">
+      <Filter>alloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\conv\conv_base64.cpp">
+      <Filter>conv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\conv\conv_charset.cpp">
+      <Filter>conv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\conv\conv_json.cpp">
+      <Filter>conv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\conv\conv_md5.cpp">
+      <Filter>conv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\conv\conv_rc4.cpp">
+      <Filter>conv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\conv\conv_rsa.cpp">
+      <Filter>conv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\dev\dev_nginx.cpp">
+      <Filter>dev</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\dev\dev_stat.cpp">
+      <Filter>dev</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\event\event.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\event\event_accpet.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\event\event_connection.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\event\event_io.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\event\event_rbtree.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\event\event_timer.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\files\files_lock.cpp">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\files\files_stream.cpp">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\files\files_table.cpp">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\inet\inet_http.cpp">
+      <Filter>inet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\inet\inet_parse.cpp">
+      <Filter>inet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\inet\inet_socket.cpp">
+      <Filter>inet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\logs\logs.cpp">
+      <Filter>logs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\method\circuit_mutex.cpp">
+      <Filter>method</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\module\modules_conf.cpp">
+      <Filter>module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\module\modules_core.cpp">
+      <Filter>module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\module\modules_errlog.cpp">
+      <Filter>module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\module\modules_event.cpp">
+      <Filter>module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\module\modules_event_epoll.cpp">
+      <Filter>module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\module\modules_event_select.cpp">
+      <Filter>module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\module\modules_load.cpp">
+      <Filter>module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\module\modules_nodes.cpp">
+      <Filter>module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\module\modules_parse.cpp">
+      <Filter>module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\process\process_cycle.cpp">
+      <Filter>process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\process\process_files.cpp">
+      <Filter>process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\process\process_mgr.cpp">
+      <Filter>process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\process\process_option.cpp">
+      <Filter>process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\process\process_popen.cpp">
+      <Filter>process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\thread\thread_collection.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\thread\thread_pool.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\thread\thread_task.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\logs\logs_thread.cpp">
+      <Filter>logs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kits\logs\logs_record.cpp">
+      <Filter>logs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\kits\alloc\alloc_buffer.h">
+      <Filter>alloc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\alloc\alloc_pool.h">
+      <Filter>alloc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\conv\conv.h">
+      <Filter>conv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\conv\conv_json.h">
+      <Filter>conv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\dev\dev_nginx.h">
+      <Filter>dev</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\dev\dev_stat.h">
+      <Filter>dev</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\event\event.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\event\event_connection.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\event\event_io.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\event\event_posted.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\event\event_rbtree.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\event\event_timer.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\files\files_stream.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\files\files_tools.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\inet\inet_http.h">
+      <Filter>inet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\inet\inet_parse.h">
+      <Filter>inet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\inet\inet_socket.h">
+      <Filter>inet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\logs\logs.h">
+      <Filter>logs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\logs\logs_config.h">
+      <Filter>logs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\method\circuit_mutex.h">
+      <Filter>method</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\method\circuit_queue.hpp">
+      <Filter>method</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\module\modules.h">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\module\modules_conf.h">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\module\modules_config.h">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\module\modules_core.h">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\module\modules_cycle.h">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\module\modules_event.h">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\module\modules_load.h">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\module\modules_nodes.h">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\process\process.h">
+      <Filter>process</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\process\process_mgr.h">
+      <Filter>process</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\thread\thread_collection.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\thread\thread_object.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\thread\thread_pool.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\thread\thread_task.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\logs\logs_thread.h">
+      <Filter>logs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\logs\logs_record.h">
+      <Filter>logs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\kits\logs\logs_stream.h">
+      <Filter>logs</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

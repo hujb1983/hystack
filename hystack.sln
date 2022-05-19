@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1831
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hystack-core", "msvc\hystack-core\hystack-core.vcxproj", "{80807CDA-A198-4830-B15D-70C420142B6A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4692D108-B7A8-4E9F-8F3B-E0D3A3AE5703} = {4692D108-B7A8-4E9F-8F3B-E0D3A3AE5703}
+		{7068AB43-8CC6-43DA-AAFB-AFB798FA41F3} = {7068AB43-8CC6-43DA-AAFB-AFB798FA41F3}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hystack-libnodes", "msvc\hystack-libnodes\hystack-libnodes.vcxproj", "{7068AB43-8CC6-43DA-AAFB-AFB798FA41F3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hystack-libkits", "msvc\hystack-libkits\hystack-libkits.vcxproj", "{4692D108-B7A8-4E9F-8F3B-E0D3A3AE5703}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80807CDA-A198-4830-B15D-70C420142B6A}.Debug|x64.ActiveCfg = Debug|x64
+		{80807CDA-A198-4830-B15D-70C420142B6A}.Debug|x64.Build.0 = Debug|x64
+		{80807CDA-A198-4830-B15D-70C420142B6A}.Debug|x86.ActiveCfg = Debug|Win32
+		{80807CDA-A198-4830-B15D-70C420142B6A}.Debug|x86.Build.0 = Debug|Win32
+		{80807CDA-A198-4830-B15D-70C420142B6A}.Release|x64.ActiveCfg = Release|x64
+		{80807CDA-A198-4830-B15D-70C420142B6A}.Release|x64.Build.0 = Release|x64
+		{80807CDA-A198-4830-B15D-70C420142B6A}.Release|x86.ActiveCfg = Release|Win32
+		{80807CDA-A198-4830-B15D-70C420142B6A}.Release|x86.Build.0 = Release|Win32
+		{7068AB43-8CC6-43DA-AAFB-AFB798FA41F3}.Debug|x64.ActiveCfg = Debug|x64
+		{7068AB43-8CC6-43DA-AAFB-AFB798FA41F3}.Debug|x64.Build.0 = Debug|x64
+		{7068AB43-8CC6-43DA-AAFB-AFB798FA41F3}.Debug|x86.ActiveCfg = Debug|Win32
+		{7068AB43-8CC6-43DA-AAFB-AFB798FA41F3}.Debug|x86.Build.0 = Debug|Win32
+		{7068AB43-8CC6-43DA-AAFB-AFB798FA41F3}.Release|x64.ActiveCfg = Release|x64
+		{7068AB43-8CC6-43DA-AAFB-AFB798FA41F3}.Release|x64.Build.0 = Release|x64
+		{7068AB43-8CC6-43DA-AAFB-AFB798FA41F3}.Release|x86.ActiveCfg = Release|Win32
+		{7068AB43-8CC6-43DA-AAFB-AFB798FA41F3}.Release|x86.Build.0 = Release|Win32
+		{4692D108-B7A8-4E9F-8F3B-E0D3A3AE5703}.Debug|x64.ActiveCfg = Debug|x64
+		{4692D108-B7A8-4E9F-8F3B-E0D3A3AE5703}.Debug|x64.Build.0 = Debug|x64
+		{4692D108-B7A8-4E9F-8F3B-E0D3A3AE5703}.Debug|x86.ActiveCfg = Debug|Win32
+		{4692D108-B7A8-4E9F-8F3B-E0D3A3AE5703}.Debug|x86.Build.0 = Debug|Win32
+		{4692D108-B7A8-4E9F-8F3B-E0D3A3AE5703}.Release|x64.ActiveCfg = Release|x64
+		{4692D108-B7A8-4E9F-8F3B-E0D3A3AE5703}.Release|x64.Build.0 = Release|x64
+		{4692D108-B7A8-4E9F-8F3B-E0D3A3AE5703}.Release|x86.ActiveCfg = Release|Win32
+		{4692D108-B7A8-4E9F-8F3B-E0D3A3AE5703}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81BAB690-B851-4BEA-BAD3-2E1C13A7C66D}
+	EndGlobalSection
+EndGlobal

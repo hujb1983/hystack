@@ -1,0 +1,37 @@
+
+# user nobody;
+worker_processes  1;
+
+error_log "D:\hystack\auto\logs\error.log" error;
+error_log "D:\hystack\auto\logs\debug.log" debug;
+error_log "D:\hystack\auto\logs\trace.log" trace;
+error_log "D:\hystack\auto\logs\info.log"  info;
+
+events {
+	use select;
+    worker_connections  60;
+}
+
+http {
+
+	server {
+
+		listen			80;
+		server_name		localhost;
+
+		location / {
+			
+		}
+	}
+}
+
+agents {
+	
+	edge_path	"/usr/local/openresty/nginx/";
+	edge_conf	"/usr/local/openresty/nginx/conf/";
+	edge_sbin	"/usr/local/openresty/nginx/sbin/";
+	edge_cert	"/usr/local/openresty/nginx/cert/";
+	edge_html	"/usr/local/openresty/nginx/html/";
+	edge_lua	"/usr/local/openresty/nginx/conf/lua/";
+	edge_cache	"/data/nginx/cache";
+}
